@@ -1,0 +1,1201 @@
+html{height: 100%;}
+p{font-weight: 300;}
+#hidden{display: none;}
+body{
+  width:100%;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+a{text-decoration: none;}
+#logo{
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -110px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  z-index: -1000;
+}
+.up{
+  background-color: black;
+  padding-top: 50px;
+	position: fixed;
+	width: 100%;
+	transition: 0.3s all;
+	z-index: 1;
+}
+.navigator {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#0F2027, #203A43, #2C5364);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+	font-weight: 300;
+}
+.navigator a {
+	padding-top: 2%;
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+	text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.navigator a:hover {color: #fffdd0;}
+.navigator .closebtn {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .navigator {padding-top: 15px;}
+  .navigator a {font-size: 18px;}
+}
+#logo>a{
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease-out;
+}
+#hamburger{
+	color: white;
+	transition: color 0.3s ease-out;
+}
+.content>h1{
+  color: white;
+  position: relative;
+  margin-top: -460px;
+  margin-left: 30px;
+  font-size: 4em;
+  text-transform: uppercase;
+  max-width: 1000px;
+  text-align: justify;
+}
+.content>p{
+  color: white;
+  position: relative;
+  margin-top: -50px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  max-width: 1000px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+#banner-button{
+	margin-left: 20px;
+	border: none;
+  font-size: 1.75em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#banner-button>a{
+  position: relative;
+  color: white;
+}
+#banner-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#banner-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#security-awareness-banner-button{
+  position: absolute;
+  bottom: 10px;
+  margin-left: 600px;
+	border: none;
+  font-size: 1.75em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#security-awareness-banner-button>a{
+  position: relative;
+  color: white;
+}
+#security-awareness-banner-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#security-awareness-banner-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#enterprise-awareness-banner-button{
+  position: absolute;
+  bottom: 10px;
+  margin-left: 600px;
+	border: none;
+  font-size: 1.75em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#enterprise-awareness-banner-button>a{
+  position: relative;
+  color: white;
+}
+#enterprise-awareness-banner-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#enterprise-awareness-banner-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#security-awareness-second-content-button{
+  position: absolute;
+  bottom: -10px;
+  margin-left: 10px;
+	border: none;
+  font-size: 1em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#security-awareness-second-content-button>a{
+  position: relative;
+  color: white;
+}
+#security-awareness-second-content-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#security-awareness-second-content-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#security-awareness-fourth-content-button{
+  position: absolute;
+  margin-left: -10px;
+	border: none;
+  font-size: 1em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#security-awareness-fourth-content-button>a{
+  position: relative;
+  color: white;
+}
+#security-awareness-fourth-content-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#security-awareness-fourth-content-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#about-us-banner-heading{
+  text-transform: uppercase;
+  font-size: 4em;
+  position: absolute;
+  left: 60px;
+  bottom: 120px;
+  font-weight: 300;
+  color: white;
+}
+#about-us-banner-description{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: justify;
+  position: absolute;
+  bottom: 5px;
+  left: 60px;
+  max-width: 1000px;
+  color: white;
+  line-height: 1.6em;
+}
+#contact-us-banner-heading{
+  text-transform: uppercase;
+  font-size: 4em;
+  position: absolute;
+  left: 60px;
+  bottom: 160px;
+  font-weight: 300;
+  color: white;
+}
+#contact-us-banner-description{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: justify;
+  position: absolute;
+  bottom: -100px;
+  left: 60px;
+  max-width: 1000px;
+  color: white;
+  line-height: 1.6em;
+}
+#security-awareness-banner-heading{
+  text-transform: uppercase;
+  font-size: 4em;
+  position: absolute;
+  text-align: center;
+  left: 60px;
+  bottom: 300px;
+  font-weight: 300;
+  color: white;
+}
+.security-awareness-banner>h3{
+  text-transform: capitalize;
+  font-size: 3em;
+  position: absolute;
+  text-align: center;
+  left: 400px;
+  bottom: 220px;
+  font-weight: 300;
+  color: white;
+}
+#security-awareness-banner-description{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 200px;
+  max-width: 1000px;
+  color: white;
+  line-height: 1.6em;
+}
+#enterprise-awareness-banner-heading{
+  text-transform: uppercase;
+  font-size: 4em;
+  position: absolute;
+  text-align: center;
+  left: 125px;
+  bottom: 320px;
+  font-weight: 300;
+  color: white;
+}
+.enterprise-awareness-banner>h3{
+  text-transform: capitalize;
+  font-size: 3em;
+  position: absolute;
+  text-align: center;
+  left: 400px;
+  bottom: 280px;
+  font-weight: 300;
+  color: white;
+}
+#enterprise-awareness-banner-description{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 200px;
+  max-width: 1000px;
+  color: white;
+  line-height: 1.6em;
+}
+.banner{
+  height: 115vh;
+  width: 100%;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+.about-us-banner{
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/about-us-banner.jpg');
+  background-attachment: fixed;
+  display: table;
+}
+.contact-us-banner{
+  height: 120vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/contact-us-banner.jpg');
+  background-attachment: fixed;
+  display: table;
+}
+.security-awareness-banner{
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../Media/security-awareness-banner.jpg');
+  background-position: center center;
+  display: table;
+}
+.enterprise-awareness-banner{
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: table;
+  background-position: center center;
+  background-image: url('../Media/enterprise-banner.jpg');
+}
+.left-vertical-line{
+  border-left: 1px solid white;
+  height: 450px;
+  margin-left: 500px;
+}
+.right-vertical-line{
+  border-left: 1px solid white;
+  height: 450px;
+  margin-left: 800px;
+}
+.left-vertical-line-black{
+  border-left: 1px solid black;
+  height: 450px;
+  margin-left: 500px;
+}
+.right-vertical-line-black{
+  border-left: 1px solid black;
+  height: 450px;
+  margin-left: 800px;
+}
+#horizontal-rule{
+  margin-left: 30px;
+  margin-top: 230px;
+  border: 1px solid white;
+  max-width: 1000px;
+  width: 0%;
+  transition: 2s all ease-in;
+}
+.first-content{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/blue-background.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#first-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -450px;
+  margin-top: 180px;
+  position: absolute;
+}
+.first-content-para{
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 200;
+  max-width: 700px;
+  margin-left: 570px;
+  word-spacing: 5px;
+  line-height: 1.6em;
+}
+.about-us-first-content{
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url('../Media/about-us-first-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#about-us-first-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: -220px;
+}
+#about-us-first-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -375px;
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.contact-us-first-content{
+  height: 255vh;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url('../Media/contact-us-first-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#contact-us-first-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: -260px;
+}
+#contact-us-first-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -800px;
+  max-width: 700px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.security-awareness-first-content{
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../Media/security-awareness-first-content.jpg');
+  display: table;
+}
+#gartner_logo{
+  position: absolute;
+  bottom: -35%;
+  left: -15%;
+}
+#security-awareness-first-content-para{
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: -200px;
+  max-width: 700px;
+  margin-left: 570px;
+  word-spacing: 5px;
+  line-height: 1.6em;
+}
+.contact-form{
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/contact-form.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#contact-form-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -450px;
+  margin-top: 180px;
+  position: absolute;
+}
+#contact-us-form{
+  background: black;
+  max-width: 40%;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: -415px;
+}
+#contact-us-form>input,select{
+	width: 200px;
+	margin-left: 25px;
+  display: inline;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px white;
+	transition: all 0.3s cubic-bezier(0.64,0.09,0.08,1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, white 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, white 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 300;
+	font-family:montserrat;
+	appearance: none;
+	-moz-appearance: none;
+  text-transform: capitalize;
+}
+option{color:black;}
+#contact-us-form>input::-webkit-linear-placeholder{color:white}
+#contact-us-form>input:focus{
+	box-shadow: none;
+	outline: none;
+	background-position: 0.0;
+}
+#contact-us-form>select:focus{
+	box-shadow: none;
+	outline: none;
+	background-position: 0.0;
+}
+#submit-button{
+	margin-left: 20px;
+	border: none;
+  font-size: 1.3em;
+  font-family: montserrat;
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+}
+#submit-button>a{
+  position: relative;
+  color: white;
+}
+#submit-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#submit-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.second-content{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/Black.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#second-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -400px;
+  margin-top: 180px;
+  position: absolute;
+}
+.container>a{
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: 0.2s font-size,color ease-in-out;
+}
+.container>a:hover{font-size: 2.3em;color:#fffdd0;}
+#card-1{
+  color: white;
+  box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 50px;
+  margin-top: -350px;
+	#card-1>p{text-align: justify;}
+}
+#card-2{
+  color: white;
+	box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 450px;
+	margin-top: -190px;
+	#card-2>p{text-align: justify;}
+}
+#card-3{
+  color: white;
+	box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 50px;
+	margin-top: 70px;
+	#card-3>p{text-align: justify;}
+}
+#card-4{
+  color: white;
+	box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 450px;
+	margin-top: -125px;
+	#card-4>p{text-align: justify;}
+}
+#card-5{
+  color: white;
+	box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 50px;
+	margin-top: 50px;
+	#card-5>p{text-align: justify;}
+}
+#card-6{
+  color: white;
+	box-shadow: 0 0px 0px 0;
+  max-width: 340px;
+	margin-left: 450px;
+	margin-top: -190px;
+	#card-6>p{text-align: justify;}
+}
+.about-us-second-content{
+  height: 170vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/about-us-second-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#about-us-second-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: -320px;
+}
+#about-us-second-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -400px;
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.security-awareness-second-content{
+  height: 300vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/security-awareness-second-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#security-awareness-second-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -535px;
+  margin-top: -360px;
+  position: absolute;
+  color: white;
+}
+#security-awareness-second-content-para:nth-child(1){
+  font-size: 1.6em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -430px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+#security-awareness-second-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -430px;
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.enterprise-awareness-second-content{
+  height: 320vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/enterprise-awareness-second-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#enterprise-awareness-second-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -535px;
+  margin-top: -320px;
+  position: absolute;
+  color: white;
+}
+.third-content{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/computers.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: black;
+}
+#third-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -400px;
+  margin-top: 180px;
+  position: absolute;
+}
+.third-content-para{
+  margin-left: 600px;
+  font-size: 2em;
+  line-height: 1.6em;
+}
+.about-us-third-content{
+  height: 195vh;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url('../Media/about-us-third-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#about-us-third-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: -475px;
+}
+#about-us-third-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -425px;
+  text-align: justify;
+  max-width: 750px;
+  line-height: 1.6em;
+}
+.security-awareness-third-content{
+  height: 480vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/security-awareness-third-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#security-awareness-third-content-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -250px;
+  margin-top: -260px;
+  position: absolute;
+  color: white;
+}
+#security-awareness-third-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -425px;
+  text-align: justify;
+  max-width: 750px;
+  line-height: 1.6em;
+}
+.about-us-fourth-content{
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url('../Media/awards.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#about-us-fourth-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: -800px;
+  text-transform: capitalize;
+}
+#about-us-fourth-content-awards{
+  position: absolute;
+  margin-left: 310px;
+  margin-top: 240px;
+  word-spacing: 175px;
+  display: inline;
+}
+.security-awareness-fourth-content{
+  height: 360vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/security-awareness-fourth-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#security-awareness-fourth-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: -300px;
+  margin-left:-420px;
+}
+#security-awareness-fourth-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -430px;
+  max-width: 750px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+.about-us-fifth-content{
+  height: 290vh;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  background-image: url('../Media/about-us-fifth-content.jpg');
+  display: table;
+  background-attachment: fixed;
+}
+#about-us-fifth-content-heading{
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: -850px;
+  text-transform: capitalize;
+}
+#about-us-fifth-content-para{
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin-left: 30px;
+  max-width: 70%;
+  line-height: 1.6em;
+  text-align: justify;
+}
+.infrastructure-side{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/infrastructure.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#infrastructure-side-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#infrastructure-side-para{
+  text-align: justify;
+  margin-left: 70px;
+  margin-top: -350px;
+  font-size: 2em;
+  line-height: 1.6em;
+  max-width: 50%;
+}
+.behavioral-side{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/behavioral.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#behavioral-side-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#behavioral-side-para{
+  text-align: justify;
+  margin-left: 580px;
+  font-size: 2em;
+  line-height: 1.6em;
+  max-width: 50%;
+  margin-top: -375px;
+}
+.resilient-side{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/resilient.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#resilient-side-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#resilient-side-para{
+  text-align: justify;
+  margin-left: 70px;
+  margin-top: -350px;
+  font-size: 2em;
+  line-height: 1.6em;
+  max-width: 50%;
+}
+.readiness-side{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/readiness.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#readiness-side-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#readiness-side-para{
+  text-align: justify;
+  margin-left: 580px;
+  font-size: 2em;
+  line-height: 1.6em;
+  max-width: 50%;
+  margin-top: -325px;
+}
+.connected-side{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/connected.jpg');
+  display: table;
+  background-attachment: fixed;
+  color: white;
+}
+#connected-side-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#connected-side-para{
+  text-align: justify;
+  margin-left: 70px;
+  margin-top: -350px;
+  font-size: 2em;
+  line-height: 1.6em;
+  max-width: 50%;
+}
+.email-subscription{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/email.jpg');
+  display: table;
+  background-attachment: fixed;
+  background-color: black;
+  color: white;
+}
+#email-subscription-heading{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 250px;
+  position: absolute;
+}
+#description-heading{
+  text-align: left;
+  font-size: 4em;
+  font-weight: 300;
+  text-transform: capitalize;
+  max-width: 55%;
+  margin-left: 550px;
+  margin-top: -320px;
+}
+#subscriber-email{
+  margin-left: 550px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px transparent;
+  transition: all 0.3s cubic-bezier(0.64,0.09,0.08,1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, white 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, white 4%);
+  background-position: -500px 0;
+  background-size: 500px 100%;
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+#subscriber-email::-webkit-linear-placeholder{transition: all 0.3s ease-in-out;}
+#subscriber-email:focus{
+	box-shadow: none;
+	outline: none;
+	background-position: 0.0;
+}
+::placeholder{color: white;}
+#mail-button{
+  margin-left: 545px;
+	border: none;
+  font-size: 1.5em;
+  font-family: montserrat;
+  cursor: pointer;
+  background: transparent;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  outline: none;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+#mail-button>a{
+  position: relative;
+  color: white;
+}
+#mail-button>a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#mail-button > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.contact-us{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('../Media/contact.jpg');
+  display: table;
+  background-attachment: fixed;
+  background-color: black;
+  color: white;
+}
+#follow-us{
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: 300;
+  margin-left: -530px;
+  margin-top: 180px;
+  position: absolute;
+}
+#social-media{
+  font-size: 3em;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-top: -250px;
+  position: relative;
+}
+.social-media{
+  position: absolute;
+  margin-top: -250px;
+  left: 15%;
+}
+#footer-copyright{
+  position: absolute;
+  font-size: .8em;
+  left: 70.5%;
+  text-align: center;
+}
